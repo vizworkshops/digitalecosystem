@@ -4,8 +4,6 @@
     <meta charset='utf-8' />
     <title>Adjust a layer's opacity</title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.31.0/mapbox-gl.js'></script>
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.31.0/mapbox-gl.css' rel='stylesheet' />
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css' rel='stylesheet' />
     <style>
@@ -63,7 +61,20 @@ var map = new mapboxgl.Map({
     minZoom: 9.5,
     maxZoom: 13,
     zoom: 9.5
-
+map.on('click', function(e) {
+  var features = map.queryRenderedFeatures(e.point, {
+    layers: ['1939GB'] // replace this with the name of the layer
+  });
+  if (!features.length) {
+    return;
+  }
+  var feature = features[0];
+  var popup = new mapboxgl.Popup({ offset: [0, -15] })
+    .setLngLat(feature.geometry.coordinates)
+    .setHTML('<h3>' + feature.properties.Type + '</h3><p>' + feature.properties.Name + '</p>')
+    .setLngLat(feature.geometry.coordinates)
+    .addTo(map);
+});
 });
 var slider = document.getElementById('slider');
 var sliderValue = document.getElementById('slider-value');
@@ -85,20 +96,7 @@ map.on('load', function() {
         sliderValue.textContent = e.target.value + '%';
     });
 });
-    map.on('click', function(e) {
-  var features = map.queryRenderedFeatures(e.point, {
-    layers: ['1939GB'] // replace this with the name of the layer
-  });
-  if (!features.length) {
-    return;
-  }
-  var feature = features[0];
-  var popup = new mapboxgl.Popup({ offset: [0, -15] })
-    .setLngLat(feature.geometry.coordinates)
-    .setHTML('<h3>' + feature.properties.Type + '</h3><p>' + feature.properties.Name + '</p>')
-    .setLngLat(feature.geometry.coordinates)
-    .addTo(map);
-});
+    
 </script>
 
 </body>
