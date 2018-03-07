@@ -4,7 +4,8 @@
     <meta charset='utf-8' />
     <title>Adjust a layer's opacity</title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-    <script src="https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/3.15/cartodb.uncompressed.js"></script>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.31.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.31.0/mapbox-gl.css' rel='stylesheet' />
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css' rel='stylesheet' />
     <style>
@@ -46,7 +47,7 @@
 
 <div id='map'></div>
 
-<div class='map-overlay bottom'>
+<div class='map-overlay top'>
     <div class='map-overlay-inner'>
         <label>Layer opacity: <span id='slider-value'>100%</span></label>
         <input id='slider' type='range' min='0' max='100' step='0' value='100' />
