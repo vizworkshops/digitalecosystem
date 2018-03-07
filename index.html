@@ -4,6 +4,7 @@
     <meta charset='utf-8' />
     <title>Adjust a layer's opacity</title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src="https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/3.15/cartodb.uncompressed.js"></script>
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css' rel='stylesheet' />
     <style>
@@ -96,6 +97,7 @@ map.on('load', function() {
     .setLngLat(feature.geometry.coordinates)
     .addTo(map);
 });
+
 </script>
 
 </body>
