@@ -63,6 +63,20 @@ var map = new mapboxgl.Map({
     maxZoom: 13,
     zoom: 9.5
 });
+       map.on('click', function(e) {
+  var features = map.queryRenderedFeatures(e.point, {
+    layers: ['1939GB'] // replace this with the name of the layer
+  });
+  if (!features.length) {
+    return;
+  }
+  var feature = features[0];
+  var popup = new mapboxgl.Popup({ offset: [0, -15] })
+    .setLngLat(feature.geometry.coordinates)
+    .setHTML('<h3>' + feature.properties.Type + '</h3><p>' + feature.properties.Name + '</p>')
+    .setLngLat(feature.geometry.coordinates)
+    .addTo(map);
+});
 var slider = document.getElementById('slider');
 var sliderValue = document.getElementById('slider-value');
 map.on('load', function() {
@@ -83,27 +97,8 @@ map.on('load', function() {
         sliderValue.textContent = e.target.value + '%';
     });
 });
-    map.on('click', function(e) {
-  var features = map.queryRenderedFeatures(e.point, {
-    layers: ['1939GB'] // replace this with the name of the layer
-  });
-  if (!features.length) {
-    return;
-  }
-  var feature = features[0];
-  var popup = new mapboxgl.Popup({ offset: [0, -15] })
-    .setLngLat(feature.geometry.coordinates)
-    .setHTML('<h3>' + feature.properties.Type + '</h3><p>' + feature.properties.Name + '</p>')
-    .setLngLat(feature.geometry.coordinates)
-    .addTo(map);
-});
-var layers = 
-        //add cartoDB layer, set z-index so it shows up on top
-        cartodb.createLayer(map, 'https://cartorutkowski.carto.com/builder/c582977b-3cfe-4940-a67f-dea2c1174156/embed').addTo(map)
-        .on('done', function(layer) {
-            layer.setZIndex(5);
-        });
-        L.control.layers(layers).addTo(map);
+ 
+
 </script>
 
 </body>
