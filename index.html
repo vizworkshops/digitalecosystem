@@ -61,6 +61,7 @@ var map = new mapboxgl.Map({
     minZoom: 9.5,
     maxZoom: 13,
     zoom: 9.5
+    });
 map.on('click', function(e) {
   var features = map.queryRenderedFeatures(e.point, {
     layers: ['1939GB'] // replace this with the name of the layer
