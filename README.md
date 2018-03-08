@@ -33,7 +33,6 @@ For most digital projects you will have an assortment of materials that you will
 
 * a dataset created by pulling data from the GreenBook
 * georeferenced historical maps of Los Angeles
-* census data
 * Los Angeles Times neighborhood boundary data
 * Historical HOLC (Insurance map) boundary and rating data
 
