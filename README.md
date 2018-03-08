@@ -42,6 +42,7 @@ For this project we will use a collection of different types of data. Using thes
 
 ---------------
 All files are located in this google drive:
+---
 
 https://drive.google.com/drive/folders/1IwftaTkbRf0fxulIwYzKVBQsGgMSuTpe?usp=sharing
 
@@ -68,6 +69,7 @@ Polygon Boundary Files These files show distinct boundaries with associated meta
 ----------------
 
 Lets try CARTO!
+---------------
 
 https://cartorutkowski.carto.com/builder/5bbac628-f4c2-4a56-9574-ba0f6ef2430d/embed
 
