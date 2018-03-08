@@ -24,11 +24,11 @@ In the case you do not get your Student Developer Pack in time for the workshop,
 ----------
 For most digital projects you will have an assortment of materials that you will then want to visualize on a map or some other method. For this example project we want to learn more about the history of Los Angeles through the lens of the GreenBook. We will use the following data to build out our project:
 
-*a dataset created by pulling data from the GreenBook
-*georeferenced historical maps of Los Angeles
-*census data
-*Los Angeles Times neighborhood boundary data
-*Historical HOLC (Insurance map) boundary and rating data
+* a dataset created by pulling data from the GreenBook
+* georeferenced historical maps of Los Angeles
+* census data
+* Los Angeles Times neighborhood boundary data
+* Historical HOLC (Insurance map) boundary and rating data
 
 Using these datasets we will create a digital project that will let us explore Los Angeles and provide opportunities for meaningful engagement, interpretation, discovery, and critical thinking.
 ----------------
@@ -44,6 +44,7 @@ CSV files with locations of places listed in the GreenBook. Special thanks to Pr
 
 * 39GreenBook.csv
 * 47GreenBook.csv
+
 Historical Maps These maps are already georeferencedgeo-referenced. This means that they have been processed using GIS software so that they have been associated or pinned to real world locations. The files are all .tiff files that have been geo-referenced.
 
 * wattsmap.zip
@@ -51,7 +52,6 @@ Historical Maps These maps are already georeferencedgeo-referenced. This means t
 * LA Times article using Watts Map - http://graphics.latimes.com/watts-riots-1965-map/
 * Richmond Panoroma project - https://dsl.richmond.edu/panorama/redlining/#loc=9/34.0050/-118.1565&opacity=0.8&city=los-angeles-ca
 * QGIS tutorial for georeferencing - https://docs.qgis.org/2.18/en/docs/training_manual/forestry/map_georeferencing.html
-Polygon Boundary Files These files show distinct boundaries with associated metadata.
 
 Polygon Boundary Files These files show distinct boundaries with associated metadata. The HOLC_LosAngeles.geojson files is a geojson file which is a geographic encoding format. The la_county-neigbhorhoods-v6.zip file contains a shapefile, which is a vector data format developed by ESRI. The shapefile format requires specialized software to be opened. CARTO allows for shapefiles (up to a certain size) to be uploaded as long as they are zipped.
 
