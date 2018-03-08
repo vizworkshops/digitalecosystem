@@ -66,3 +66,20 @@ Polygon Boundary Files These files show distinct boundaries with associated meta
 * HOLC_LosAngeles.geojson Boundaries showing grades for defined neighborhoods in 1939.
 * Lots of boundary files provided by the LA Times - http://boundaries.latimes.com/sets/
 ----------------
+
+Lets try CARTO!
+
+https://cartorutkowski.carto.com/builder/5bbac628-f4c2-4a56-9574-ba0f6ef2430d/embed
+
+Try your own map with the data.
+
+Download any of the following files from the Google Drive:
+
+39GreenBook.csv
+47GreenBook.csv
+HOLC_LosAngeles.geojson
+la-county-neighborhoods-v6.zip
+
+HOVER Image code:
+
+<div class="cartodb-tooltip-content-wrapper"> <div class="cartodb-tooltip-content"> <p><img width=100 src={{image}}></p> </div> </div>
