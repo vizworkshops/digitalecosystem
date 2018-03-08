@@ -32,3 +32,30 @@ For most digital projects you will have an assortment of materials that you will
 
 Using these datasets we will create a digital project that will let us explore Los Angeles and provide opportunities for meaningful engagement, interpretation, discovery, and critical thinking.
 ----------------
+For this project we will use a collection of different types of data.
+
+All files are located in this google drive:
+
+https://drive.google.com/file/d/1FIy-UBg48NLZfYIjiJYTXSHISJpfzGE9/view?usp=sharing
+
+CSV files
+
+CSV files with locations of places listed in the GreenBook. Special thanks to Professor Genevieve Carpio at UCLA and student research assistant Jose Cardona for creating and sharing the data. Jose compiled the data for these two sheets last year while doing research for an ongoing project. We used google sheets to store the data and a script that plugs into google sheets to geocode the addresses. Each address was manually transcribed by Jose from the NYPL GreenBook website - https://digitalcollections.nypl.org/collections/the-green-book#/?tab=about - then checked against current street data to verify each location.
+
+*39GreenBook.csv
+*47GreenBook.csv
+Historical Maps These maps are already georeferencedgeo-referenced. This means that they have been processed using GIS software so that they have been associated or pinned to real world locations. The files are all .tiff files that have been geo-referenced.
+
+*wattsmap.zip
+*4 HOLC Maps: NorthEastLA.zip, NorthernLA.zip, SouthernLA.zip, CentralLA.zip
+*LA Times article using Watts Map - http://graphics.latimes.com/watts-riots-1965-map/
+*Richmond Panoroma project - https://dsl.richmond.edu/panorama/redlining/#loc=9/34.0050/-118.1565&opacity=0.8&city=los-angeles-ca
+*QGIS tutorial for georeferencing - https://docs.qgis.org/2.18/en/docs/training_manual/forestry/map_georeferencing.html
+Polygon Boundary Files These files show distinct boundaries with associated metadata.
+
+Polygon Boundary Files These files show distinct boundaries with associated metadata. The HOLC_LosAngeles.geojson files is a geojson file which is a geographic encoding format. The la_county-neigbhorhoods-v6.zip file contains a shapefile, which is a vector data format developed by ESRI. The shapefile format requires specialized software to be opened. CARTO allows for shapefiles (up to a certain size) to be uploaded as long as they are zipped.
+
+*_la-county-neighborhoods-v6.zip _ Los Angeles Neighborhood boundaries as developed by the LA Times.
+*HOLC_LosAngeles.geojson Boundaries showing grades for defined neighborhoods in 1939.
+*Lots of boundary files provided by the LA Times - http://boundaries.latimes.com/sets/
+----------------
