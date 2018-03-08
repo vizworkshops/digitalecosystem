@@ -42,7 +42,7 @@ For this project we will use a collection of different types of data.
 
 All files are located in this google drive:
 
-https://drive.google.com/file/d/1FIy-UBg48NLZfYIjiJYTXSHISJpfzGE9/view?usp=sharing
+https://drive.google.com/drive/folders/1IwftaTkbRf0fxulIwYzKVBQsGgMSuTpe?usp=sharing
 
 CSV files
 
