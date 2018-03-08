@@ -22,6 +22,13 @@ In the case you do not get your Student Developer Pack in time for the workshop,
 * Mapbox - https://www.mapbox.com/signup/
 * GitHub - https://github.com/join?source=header-home
 ----------
+What makes a good project? The easiest answer is a meaningful question or inquiry. For this workshop we will use Los Angeles as our site of analysis. One of the best examples of a digital mapping project is South Carolina's Green Book project:
+
+* http://library.sc.edu/digital/collections/greenbook.html 
+
+We will seek to recreate a version of this project at the local level in order to learn more about Los Angeles, race, and place.
+
+----------
 For most digital projects you will have an assortment of materials that you will then want to visualize on a map or some other method. For this example project we want to learn more about the history of Los Angeles through the lens of the GreenBook. We will use the following data to build out our project:
 
 * a dataset created by pulling data from the GreenBook
