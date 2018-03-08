@@ -84,7 +84,7 @@ map.on('load', function() {
 });
     map.on('click', function(e) {
   var features = map.queryRenderedFeatures(e.point, {
-    layers: ['39GreenBook'],['47GreenBook'] // replace this with the name of the layer
+    layers: ['39GreenBook', '47GreenBook'] // replace this with the name of the layer
   });
   if (!features.length) {
     return;
