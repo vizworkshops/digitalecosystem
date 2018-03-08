@@ -85,5 +85,14 @@ HOVER Image code:
 <div class="cartodb-tooltip-content-wrapper">
   <div class="cartodb-tooltip-content"> <p><img width=100 src={{image}}></p> </div> </div>
 ~~~~
+OK. So now you want to bring in a historical map and overlay it alongside your CARTO data. But how?! You don't have access to a server and you are not an experienced coder (yet).
 
+MapBox and CARTO provide a simple solution that can get you started on the road to developing more and more complex and richly detailed maps.
+
+Lets sign into MapBox.
+------------------------
+GitHub
+So now you have a project. How can put the pieces together, make them transparent, and share them to the world? Lets walk though GitHub and see how you can use a GitHub repository to put your digital project together and make it accessible to the world.
+
+Sign-in to GitHub
 
