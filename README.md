@@ -81,7 +81,9 @@ HOLC_LosAngeles.geojson
 la-county-neighborhoods-v6.zip
 
 HOVER Image code:
+~~~~
+<div class="cartodb-tooltip-content-wrapper">
+  <div class="cartodb-tooltip-content"> <p><img width=100 src={{image}}></p> </div> </div>
+~~~~
 
-'<div class="cartodb-tooltip-content-wrapper">
-  <div class="cartodb-tooltip-content"> <p><img width=100 src={{image}}></p> </div> </div>'
 
