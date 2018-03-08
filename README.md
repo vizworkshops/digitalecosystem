@@ -1,8 +1,9 @@
 # Welcome to the Digital Ecosystem workshop repository. 
 
 This repo contains materials and a wiki that will help walk you through how to set up a simple digital ecosystem using software and data that is freely and (mostly) readily available. 
+--------------
+One of the motivations for this workshop is to provide a model for how to easily create a digital map that incorporates point data with raster data (historical maps).
 
-One of the underlying motivations for this workshop is to provide a model for how to easily create a digital map that incorporates point data with raster data (historical maps). 
 --------------
 You will need at least 3 accounts to participate in this workshop.
 
@@ -36,10 +37,10 @@ For most digital projects you will have an assortment of materials that you will
 * Los Angeles Times neighborhood boundary data
 * Historical HOLC (Insurance map) boundary and rating data
 
-Using these datasets we will create a digital project that will let us explore Los Angeles and provide opportunities for meaningful engagement, interpretation, discovery, and critical thinking.
 ----------------
-For this project we will use a collection of different types of data.
+For this project we will use a collection of different types of data. Using these datasets we will create a digital project that will let us explore Los Angeles and provide opportunities for meaningful engagement, interpretation, discovery, and critical thinking.
 
+---------------
 All files are located in this google drive:
 
 https://drive.google.com/drive/folders/1IwftaTkbRf0fxulIwYzKVBQsGgMSuTpe?usp=sharing
